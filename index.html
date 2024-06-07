@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Синапс</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div class="row bg-dark text-white py-3 align-items-center">
+            <div class="col-1 text-center">
+                <img src="logo.png" alt="Logo" id="logo">
+            </div>
+            <div class="col">
+                <h1>Синапс</h1>
+            </div>
+        </div>
+        <div class="row flex-grow-1">
+            <div class="col">
+                <div id="chat-window" class="border border-dark rounded p-3 bg-dark text-white">
+                </div>
+            </div>
+        </div>
+        <div class="row bg-dark py-3 align-items-center">
+            <div class="col">
+                <input type="text" id="message-input" class="form-control" placeholder="Введите сообщение...">
+            </div>
+            <div class="col-auto">
+                <button id="send-button" class="btn btn-primary">Отправить</button>
+            </div>
+            <div class="col-auto">
+                <button id="microphone-button" class="btn btn-secondary">
+                    <img src="microphone.png" alt="Microphone" id="microphone-icon">
+                </button>
+            </div>
+            <div class="col-auto">
+                <button id="attach-button" class="btn btn-secondary">
+                    <img src="attach.png" alt="Attach" id="attach-icon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
